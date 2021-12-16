@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <h1>editor!!!</h1>
+    <div id="editorjs"></div>
+
+    <!-- Load Editor.js's Core -->
+  <script src="https://cdn.jsdelivr.net/npm/@editorjs/editorjs@latest"></script>
+
+  <!-- Initialization -->
+  <script>
+    /**
+     * To initialize the Editor, create a new instance with configuration object
+     * @see docs/installation.md for mode details
+     */
+    var editor = new EditorJS({
+      /**
+       * Enable/Disable the read only mode
+       */
+      readOnly: false,
+
+      /**
+       * Wrapper of Editor
+       */
+      holder: 'editorjs',
+
+      //initial content
+      data: {
+        blocks: [
+          {
+            type : 'paragraph',
+            data : {
+              text : 'Edit me!'
+            }
+          },
+        ]
+      }
+    });
+    </script>
+  </body>
+</html>
